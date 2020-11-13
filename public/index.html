@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://kit.fontawesome.com/fa77ef94c5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="Backdrop hide-display" id="Backdrop"></div>
+    <div class="Recommendation HideModal" id="Modal">
+      <h4>Movie Recommendation</h4>
+      <span id="close-icon" class="close-icon"><i class="fas fa-times"></i></span>
+  </div>
+    <section class="hero header">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+           Movie Statistical
+            <span class="icon">
+              <i class="fas fa-film"></i>
+            </span>
+          </h1>
+          <p class="description">The Unbiased Movie App</p>
+        </div>
+      </div>
+     
+    </section>
+    <div class="container">
+      <p id="movie-rec" class="movie-rec hide-display">See Movie Recommendation <i class="far fa-lightbulb"></i></p>
+      <div class="columns">
+        <div class="column">
+          <div id="left-autocomplete"></div>
+          <div id="left-summary"></div>
+        </div>
+
+        <div class="column">
+          <div id="right-autocomplete"></div>
+          <div id="right-summary"></div>
+        </div>
+      </div>
+        <div class="column is-half notification tutorial">
+          <h1 class="title">Search For a Movie on Both Sides</h1>
+          <p class="subtitle description">Get an Unbiased Movie Recommendation</p>
+        </div>
+    </div>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/autocomplete.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
